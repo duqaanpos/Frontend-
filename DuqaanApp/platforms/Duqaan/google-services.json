@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "674992289180",
+    "firebase_url": "https://pimppros-160206.firebaseio.com",
+    "project_id": "pimppros-160206",
+    "storage_bucket": "pimppros-160206.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674992289180:android:49cc0b76f5ea79f9",
+        "android_client_info": {
+          "package_name": "services.pimppros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674992289180-s67jd2ddt9828pmhtpf7a5elocuumluk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAib3W_UeimAQFa2-ysS3EU32BGFh-ioJo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

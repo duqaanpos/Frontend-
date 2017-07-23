@@ -1,0 +1,65 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-badge": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-datepicker": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-spinner-dialog": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "1029409703970",
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "help.apphelp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "help.apphelp"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "help.apphelp"
+        }
+    }
+}

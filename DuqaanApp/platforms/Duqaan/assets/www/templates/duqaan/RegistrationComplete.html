@@ -1,0 +1,110 @@
+<header>
+	<div class="top-bar">
+		<div class="icon-left"  ng-click="back()"> <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> </div>
+		<h1> Business Details  </h1>
+		<div class="icon-right">  </div>
+	</div>
+</header>
+
+<div class="container">
+  	<div class="row">
+  		<h3>Business Details</h3>
+  		<hr>
+  		<form name="RegisterComplete" class="bottomMargin">
+   		 <div class="form-group">
+    	  <input type="text" class="form-control" placeholder="Enter Store Name"  ng-model="store_name" required>
+   		 </div>
+   		 
+   		 <h4>What type of retailer are you?</h4>
+   		 <div class="container">
+   		 <div class="row man">
+			<a ng-click="retailerType(1)"><img src="img/b1.png" class="img-thumbnail" ng-class ="{'myActive' : retailer_type == '1'}" ></a>
+  		 	<a ng-click="retailerType(2)"><img src="img/b2.png" class="img-thumbnail" ng-class ="{'myActive' : retailer_type == '2'}"></a>
+  		 	<a ng-click="retailerType(3)"><img src="img/b3.png" class="img-thumbnail" ng-class ="{'myActive' : retailer_type == '3'}"></a>
+   		 </div>
+   		 </div><br>
+   		 <div class="form-group">
+    	  <select name="options" class="form-control dropdown" ng-model="sell_what" required>
+			  <option value="" disabled>What do you sell?</option>
+			  <option value="product">Product</option>
+			  <option value="service">Services</option>
+			  <option value="both">Product and Service</option>
+    	  </select>
+   		 </div>
+   		 <div class="form-group">
+    	  <select name="options" class="form-control dropdown" ng-model="business_owner" ng-change="businessOwnerClicked()" required>
+			  <option value="" disabled>Business Owner</option>
+			  <option value="1">Self</option>
+			  <option value="2">More</option>
+    	  </select>
+   		 </div>
+		<div ng-if="showOwner">
+			<div  data-ng-repeat="choice in choices" >
+				<div class="form-group col-xs-1">
+					<p class="col-xs-1 addingPadding addNumbers">{{$index + 1}}.</p>
+				</div>
+				<div class="form-group col-xs-5 addingPadding">
+				 <input type="text" class="form-control" placeholder="Name" data-ng-model="choice.fullName">
+				</div>
+				<div class="form-group col-xs-5 addingPadding">
+					<input type="number" class="form-control" placeholder="Phone number" data-ng-model="choice.phoneNumber">
+				</div>
+				<button type="button" class="btn btn-default" ng-if= "choices.length > 1" ng-show="$last" ng-click="removeChoice()"><span class="glyphicon glyphicon-minus"></span></button>
+			</div>
+			<button type="button" class="btn btn-default clearfix" ng-click="addNewChoice()"><span class="glyphicon glyphicon-plus"></span></button>
+		</div>
+			<div class="form-group">
+				<select name="options" class="form-control dropdown" ng-model="employee_detail" ng-change="employeeMoreClicked()" required>
+					<option value="" disabled>How Many People Work</option>
+					<option value="1">Self</option>
+					<option value="2">More</option>
+				</select>
+			</div>
+			<div ng-if="showEmployee" >
+				<div  data-ng-repeat="choice in choicess" >
+					<div class="form-group col-xs-1">
+						<p class="col-xs-1 addingPadding addNumbers">{{$index + 1}}.</p>
+					</div>
+					<div class="form-group col-xs-5 addingPadding">
+						<input type="text" class="form-control" placeholder="Name" data-ng-model="choice.fullName">
+					</div>
+					<div class="form-group col-xs-5 addingPadding">
+						<input type="number" class="form-control" placeholder="Phone number" data-ng-model="choice.phoneNumber">
+					</div>
+					<button type="button" class="btn btn-default" ng-if= "choicess.length > 1" ng-show="$last" ng-click="removeChoices()"><span class="glyphicon glyphicon-minus"></span></button>
+				</div>
+				<button type="button"  class="btn btn-default clearfix" ng-click="addNewChoices()"><span class="glyphicon glyphicon-plus"></span></button>
+			</div>
+   		 <div class="form-group">
+    	  <select name="options" class="form-control dropdown"  data-ng-model="business_age" required>
+    	  	<option value="" disabled>Business Age</option>
+			  <option data-ng-repeat="age in businessAge" value="{{age}}">{{age}}</option>
+			  <option value="5+">5+</option>
+    	  </select>
+   		 </div>
+   		 <div class="form-group">
+    	  <select name="options" class="form-control dropdown" data-ng-model="track_business" required>
+			  <option value="" disabled>How do you track your business?</option>
+			  <option value="pen">Pen and Paper</option>
+			  <option value="excel">Excel</option>
+			  <option value="google">Google</option>
+			  <option value="other">Others</option>
+    	  </select>
+   		 </div>
+   		 
+   		 <h4>What Matters to your business?</h4>
+   		 <div class="form-group">
+			 <select multiple name="options" class="form-control dropdown" data-ng-model="business_matters" required>
+				 <option value="" disabled>What Matters to your business?</option>
+				 <option value="invoice">Invoicing</option>
+				 <option value="pos">Point of Sale</option>
+				 <option value="tracking">Expense Tracking</option>
+				 <option value="e-com">E-commerce</option>
+				 <option value="tax">Tax</option>
+				 <option value="mobile">Mobile</option>
+			 </select>
+   		 </div>
+   		 <button type="button" class="btn btn-primary btn-block btn-du"  ng-click="addingBusinessDetails(RegisterComplete.$valid)">Next</button>
+   		</form>
+  	</div>
+  </div>

@@ -1,0 +1,81 @@
+<header>
+	<div class="top-bar">
+		<div class="icon-left"> <span ng-click="openAside('left', true, 'left-nav-main')"> <img src="images/menu.png" width="22" height="15" alt=""> </span> </span> </div>
+		<h1> POS  </h1>
+		<div class="icon-right" ng-click="back()"> <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> </div>
+	</div>
+</header>
+<div class="container">
+  	<div class="row">
+  	<div class=" ">
+  		<button type="button" class="btn btn-primary btn-circle btn-lg topButton" ng-click="categoryClicked12(service.category)"  data-ng-repeat="service in servicesList | unique: 'category'">
+			{{service.category}}</button>
+  	</div>
+  	<div class="mainPackage" >
+  	<div class="verButtonsDiv" style="width: 15%">
+  		<button type="button" class="btn btn-warning btn-circle btn-lg topButton" ng-click="categoryClicked(services)"  data-ng-repeat="services in servicesCategoryList">
+			{{services.sub_category}}
+		</button>
+  	</div>
+  	<div class="minTable">
+  	<table class="table table-responsive posTable">
+    <thead>
+      <tr>
+        <th>Sr.</th>
+        <th>Item Name</th>
+        <th>Qty</th>
+        <th>Amt.</th>
+        <th> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-ng-repeat="item in items" ng-show="items.length > 0">
+        <td>{{$index + 1}}</td>
+        <td><input type="text" ng-disabled= "true" class="form-control posInputItem" data-ng-model="item.category"></td>
+        <td><input type="number" class="form-control posInput" data-ng-model="item.qty" ng-blur = "qtyClicked(item)"></td>
+        <td><input type="number" ng-disabled= "true" class="form-control posInput" data-ng-model="item.finalAmt"></td>
+        <td>
+        <button type="button" class="btn btn-default" ng-click="removeItems(item)">
+			<span class="glyphicon glyphicon-remove-circle"></span></button>
+        </td>
+      </tr>
+  </tbody>
+  </table>
+  </div>
+  	</div>
+
+   </div>
+  </div>
+<footer class="fixedFooter">
+	<div class="bg-primary fixedFooter2">
+		<div>
+			<span class="text-left totalBill">Total Bill</span><span class="text-right totalBillAmt">{{sum | number:2}}</span>
+		</div>
+	</div>
+
+	<div class="fixedFooter1">
+		<button class="btn btn-block payButton btn-primary" ng-click="payClicked()">PAY</button>
+		<button class="btn btn-block cancelButton btn-warning" ng-click="cancelButton()">CANCEL</button>
+	</div>
+</footer>
+  <section class="popup" ng-show="isVisible">
+	  <div class="main">
+		  <div class="modal-dialog modal-sm">
+			  <div class="modal-content">
+				  <div class="modal-header">
+					  <h4 class="modal-title">Select Employee</h4>
+				  </div>
+				  <!--employeeList-->
+				  <div class="modal-body" style="color: black;">
+					  <md-radio-group ng-model="employee">
+						  <md-radio-button value="self">Self</md-radio-button>
+						  <md-radio-button  ng-repeat="item in employeeList" ng-value="item.fullName" ng-click="nameClicked(item)">{{item.fullName}}</md-radio-button>
+					  </md-radio-group>
+				  </div>
+				  <div class="modal-footer">
+					  <button type="button" class="btn btn-default" ng-click="closePopUp()">Okay</button>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  </section>

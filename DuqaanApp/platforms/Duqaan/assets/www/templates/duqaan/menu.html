@@ -1,0 +1,47 @@
+<div ng-class="class">
+    <section class="figure-container">
+        <!--<figure class="profile-pic"> <img ng-src="{{imageURL}}{{profile_pic}}" alt=""> </figure>-->
+        <figcaption class="user-detail">  {{customer_name}}  </figcaption>
+        <figcaption class="user-detail">  <span>{{customer_phone_number}} </span> </figcaption>
+    </section>
+
+    <section class="nav-menu">
+        <ul style=" list-style-type: none; ">
+            <!--<li ng-class="{'active':selectedTab === 'dashboard'}" ng-click="dashboardClicked()">-->
+                <!--<a > <img src="images/nav-my-profile.png" alt="" width="22" height="22"> <span> Dashboard </span> </a>-->
+            <!--</li>-->
+            <li ng-class="{'active':selectedTab === 'pos'}" ng-click="posClicked()">
+                <a > <img src="images/nav-my-profile.png" alt="" width="22" height="22"> <span> POS </span> </a>
+            </li>
+
+            <li ng-class="{'active':selectedTab === 'myProfile'}" ng-click="profileClicked()">
+                <a > <img src="images/nav-my-profile.png" alt="" width="22" height="22"> <span> My Profile </span> </a>
+            </li>
+
+            <li ng-class="{'active':selectedTab === 'employee'}" ng-if="class == 'left-nav-main'" ng-click="employeeDetails()">
+                <a > <img src="images/nav-my-request.png" alt="" width="22" height="22"> <span> Employee </span> </a>
+            </li>
+
+            <li ng-class="{'active':selectedTab === 'customer'}" ng-click="customerDetails()">
+                <a > <img src="images/nav-my-request.png" alt="" width="22" height="22"> <span> Customer </span> </a>
+            </li>
+            <li ng-class="{'active':selectedTab === 'employeeAttendance'}"  ng-click="employeeAttendance()">
+                <a> <img src="images/nav-service-history.png" alt="" width="22" height="22"> <span> Employee Attendance </span> </a>
+            </li>
+
+            <li ng-class="{'active':selectedTab === 'resetPassword'}" ng-click="resetPasswordClicked()">
+                <a > <img src="images/nav-reset-password.png" alt="" width="22" height="22"> <span> Reset Password </span> </a>
+            </li>
+            <!--<li ng-class="{'active':selectedTab === 'support'}" ng-if="class == 'left-nav-main'" ng-click="supportClicked()">-->
+                <!--<a > <img src="images/nav-support.png" alt="" width="22" height="22"> <span> Support </span> </a>-->
+            <!--</li>-->
+            <li ng-class="{'active':selectedTab === 'about'}" ng-if="class == 'left-nav-main'" ng-click="aboutClicked()">
+                <a > <img src="images/nav-support.png" alt="" width="22" height="22"> <span> About </span> </a>
+            </li>
+            <li ng-class="{'active':selectedTab === 'logout'}" ng-click="logoutClicked()">
+                <a > <img src="images/nav-logout.png" alt="" width="22" height="22"> <span> Log Out </span> </a>
+            </li>
+
+        </ul>
+    </section>
+</div>

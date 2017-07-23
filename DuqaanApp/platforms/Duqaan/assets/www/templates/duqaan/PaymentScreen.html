@@ -1,0 +1,66 @@
+<header>
+    <div class="top-bar">
+        <div class="icon-left"> <span ng-click="openAside('left', true, 'left-nav-main')"> <img src="images/menu.png" width="22" height="15" alt=""> </span> </span> </div>
+        <h1> Payment Screen </h1>
+        <div class="icon-right" ng-click="back()"> <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> </div>
+    </div>
+</header>
+
+<div class="container">
+  	<div class="row">
+  	
+  	<form>
+     
+      <div class="input-group marginBottom10">
+      <span class="input-group-addon">Payable Amount</span>
+      <input type="number" class="form-control" name="msg" placeholder="₹ 3545" disabled data-ng-model="customerPayableAmt">
+    </div>
+    
+    <div class="input-group marginBottom10">
+      <span class="input-group-addon">Discount</span>
+      <input type="number" class="form-control" name="msg" placeholder="discount price.." ng-blur= "discountClick()" data-ng-model="customerDiscountAmt">
+    </div>
+    
+    <div class="input-group marginBottom20">
+      <span class="input-group-addon">Total Bill</span>
+      <input type="number" class="form-control" name="msg" disabled placeholder="₹ 3000" data-ng-model="customerBillAmt">
+    </div>
+    <hr>
+    
+    <div class="input-group marginBottom10">
+      <span class="input-group-addon">Pay by Cash</span>
+      <input type="number" class="form-control" name="msg" disabled placeholder="cash amount.." data-ng-model="customerCash">
+    </div>
+    
+    <div class="input-group marginBottom20">
+      <span class="input-group-addon">Pay by Credit</span>
+      <input type="number" class="form-control" name="msg" ng-blur="creditBlur()" placeholder="credit amount.." data-ng-model="customerCredit">
+    </div>
+    <hr>
+    <h3 class="marginBottom10">Customer details</h3>
+    <div class="form-group">
+    	<input type="text" class="form-control" placeholder="Customer Name" data-ng-model="customerName">
+   	</div>
+    
+    <div class="form-group">
+    	<input type="tel" class="form-control" placeholder="Contact Number" data-ng-model="customerContactNumber">
+   	</div>
+   	
+   	<div class="form-group">
+    	  <select name="options" class="form-control dropdown" data-ng-model="customerAge" ng-change="gotoPos()">
+    	  	<option disabled value="">Age</option>
+			<option data-ng-repeat="age in customer_age" value="{{age}}">{{age}}</option>
+    	  </select>
+   		 </div>
+   	
+   	<div class="form-group">
+    	  <select name="options" class="form-control dropdown" data-ng-model="customerSex">
+    	  	<option disabled value="">Sex</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+    	  </select>
+   		 </div>
+  </form>
+ 		<button type="button" class="btn btn-primary btn-block btn-du" ng-click="paymentSubmit()">Submit</button>
+  	</div>
+  </div>

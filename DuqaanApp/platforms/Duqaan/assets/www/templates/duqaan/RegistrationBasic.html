@@ -1,0 +1,61 @@
+<header>
+	<div class="top-bar">
+		<div class="icon-left" ng-click="back()"> <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> </div>
+		<h1> Registration  </h1>
+		<div class="icon-right"> </div>
+	</div>
+</header>
+
+  <div class="container">
+  	<div class="row">
+  		<h3>Personal Details</h3>
+  		<hr>
+  		
+  		<form name="RegisterBasic">
+   		 <div class="form-group">
+    	  <input type="text" class="form-control" placeholder="Full Name" ng-model="full_name" required>
+   		 </div>
+   		 <div class="form-group">
+    	  <input type="number" class="form-control" placeholder="Phone Number" ng-model="phone_number" required>
+   		</div>
+   		 <div class="form-group">
+    	  <input type="number" class="form-control" placeholder="Shop Number" ng-model="shop_number" required>
+   		 </div>
+   		 <div class="form-group">
+    	  <input type="text" class="form-control" placeholder="Street" ng-model="street" required>
+   		 </div>
+   		 <div class="form-group">
+			 <select name="options" class="form-control dropdown" ng-model="state" required>
+				 <option value=""disabled>State</option>
+				 <option value="delhi">Delhi</option>
+				 <option value="up">Uttar Pradesh</option>
+			 </select>
+   		 </div>
+   		 <div class="form-group">
+			 <select name="options" class="form-control dropdown" ng-model="city" required>
+				 <option value="" disabled>City</option>
+				 <option value="delhi">Delhi</option>
+				 <option value="noida">Noida</option>
+				 <option value="ghaziabad">Ghaziabad</option>
+				 <option value="greaterNoida">Greater Noida</option>
+			 </select>
+   		 </div>
+   		 <div class="form-group">
+    	  <input type="number" class="form-control" placeholder="Pin Code" ng-model="zip_code" required>
+   		 </div>
+   		 <div class="form-group">
+    	  <input type="text" class="form-control" placeholder="Choose your username" ng-model="user_name" required ng-blur="userNameCheck()">
+   		 </div>
+		<div class="alert alert-danger" ng-if="showAlert">
+				<strong>Alert!</strong> {{alertMsg}}.
+			</div>
+   		 <div class="form-group">
+    	  <input type="password" class="form-control" placeholder="Create Password" ng-model="password" required>
+   		 </div>
+   		 <div class="form-group">
+    	  <input type="password" class="form-control" placeholder="Confirm Password" ng-model="confirm_password" required>
+   		 </div>
+   		 <button type="button" class="btn btn-primary btn-block btn-du" ng-click="createAccount(RegisterBasic.$valid)">Create Account</button>
+		</form>
+  	</div>
+  </div>

@@ -1,0 +1,35 @@
+<!--<header>-->
+	<!--<div class="top-bar">-->
+		<!--<div class="icon-left"> <span ng-click="openAside('left', true, 'left-nav-main')"> <img src="images/menu.png" width="22" height="15" alt=""> </span></div>-->
+		<!--<div class="icon-right" ng-click="nextClick()"> </div>-->
+	<!--</div>-->
+<!--</header>-->
+
+<div class="container">
+  	<div class="row">
+		<div class="text-center">
+			<img class="dLogo" src="img/duqaan_logo_plain.svg" />
+ 		</div>
+ 		<div class="text-center marginBottom50">
+ 			<p class="decorationNone"><span class="text-muted">English </span><a> | <span> Change</span></a></p>
+ 		</div>
+  		<form name="loginForm">
+   		 <div class="form-group">
+    	  <input type="text" class="form-control" placeholder="Username" ng-model = "user_name" required>
+   		 </div>
+   		 <div class="form-group">
+    	  <input type="password" class="form-control" placeholder="Password" ng-model = "password" required>
+   		 </div>
+
+			<button type="button" class="btn btn-primary btn-block btn-du" ng-click="loginClicked(loginForm.$valid)">Submit</button>
+   		 
+ 		</form>
+
+		<br><br>
+ 		
+ 		<div class="text-center">
+ 			<p class="decorationNone"><a ng-click="registration()">Sign Up for Duqaan</a></p>
+ 			<p class="decorationNone"><a ng-click="dialNumber('8285203783')">Forget Password?</a></p>
+ 		</div>
+  	</div>
+  </div>
