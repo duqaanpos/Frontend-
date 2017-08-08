@@ -3,6 +3,7 @@ var DuqaanCtrl = angular.module("DuqaanControllers", []);
 //var baseURL = "http://pimppros.onsisdev.info:5084/api/";
 //var baseURL = "http://192.168.1.8:3000/";
 var baseURL = "http://35.189.139.110:3000/";
+//var baseURL = "http://52.91.149.107:3000/";
 
 var header="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2ZWVyZW5kcmEiOiJkZXZlbmRyYSIsImlhdCI6MTQ3Mzg1MDYwNH0.YoeHbbF_GQdj1bvMwHzJU0R0KXyij11JfhL2HgyMEyg";
 var serverMessage = "There is a problem with our system. We apologize for the inconvenience caused. Please try again later. If the problem persist, please contact at support@pimppros.com.";
@@ -55,9 +56,9 @@ DuqaanCtrl.controller("DuqaanLoginCtrl", function($scope, $rootScope, $location,
                             localStorage.setItem("user_id", data._id );
                             localStorage.setItem("user_full_name", data.user.fullName );
                             localStorage.setItem("user_phone_number", data.user.mobile);
-                            localStorage.setItem("employee_list", JSON.stringify(data.user.buisness_details.employee_list));
-                            localStorage.setItem("business_details_status", data.buisness_flag);
-                            if(data.buisness_flag == true) {
+                            localStorage.setItem("employee_list", JSON.stringify(data.user.employee_list));
+                            localStorage.setItem("business_details_status", data.business_flag);
+                            if(data.business_flag) {
                             window.plugins.toast.showShortCenter(data.msg);
                             $location.path('/welcome');
                             }else{
@@ -250,6 +251,12 @@ DuqaanCtrl.controller("DuqaanRegistrationCompleteCtrl", function($scope, $rootSc
         $scope.showOwner = false;
         $scope.showEmployee = false;
 
+        if(localStorage.getItem("user_phone_number")){
+            $scope.mobilenumber = localStorage.getItem("user_phone_number")
+        }else{
+            $scope.mobilenumber = "";
+        }
+
 
                 $scope.store_name = "";
                 $scope.retailer_type = "";
@@ -274,7 +281,7 @@ DuqaanCtrl.controller("DuqaanRegistrationCompleteCtrl", function($scope, $rootSc
                 $scope.showOwner = true;
             }
         }
-        $scope.choices = [{id: 'choice1', fullName:"", phoneNumber:""}];
+        $scope.choices = [{id: 'choice1', employeeName:"", contact_no:""}];
         $scope.addNewChoice = function() {
          var newItemNo = $scope.choices.length+1;
          $scope.choices.push({'id':'choice'+newItemNo});
@@ -292,7 +299,9 @@ DuqaanCtrl.controller("DuqaanRegistrationCompleteCtrl", function($scope, $rootSc
                 $scope.showEmployee = true;
             }
         }
-        $scope.choicess = [{id: 'choice1', fullName:"", phoneNumber:""}];
+        $scope.choiceList = {id: 'choice100', employeeName:"self", contact_no:$scope.mobilenumber};
+
+        $scope.choicess = [{id: 'choice1', employeeName:"", contact_no: ""}];
         $scope.addNewChoices = function() {
              var newItemNo = $scope.choicess.length+1;
              $scope.choicess.push({'id':'choice'+newItemNo});
@@ -309,6 +318,11 @@ DuqaanCtrl.controller("DuqaanRegistrationCompleteCtrl", function($scope, $rootSc
    /*======Adding Business details===============*/
      $scope.addingBusinessDetails = function($val) {
            if($val == true){
+            if($scope.choicess[0].employeeName == ""){
+                $scope.choicess = [{id: 'choice1', employeeName:"self", contact_no:$scope.mobilenumber}];
+            }else{
+               $scope.choicess.push($scope.choiceList);
+               }
                  for(var i = 0; i < $scope.choices.length; i++) {
                        delete $scope.choices[i]['$$hashKey'];
                        delete $scope.choices[i]['id'];
@@ -326,14 +340,14 @@ DuqaanCtrl.controller("DuqaanRegistrationCompleteCtrl", function($scope, $rootSc
                             storename : $scope.store_name,
                             retailer_type : $scope.retailer_type,
                             sell_type : $scope.sell_what,
-                            buisness_owner :  {
+                            business_owner :  {
                                                     fullName: localStorage.getItem("user_full_name"),
                                                     phoneNumber: localStorage.getItem("user_phone_number")
                                                 },
                             employee_list: $scope.choicess,
-                            buisness_age : $scope.business_age,
-                            buisness_track :  $scope.track_business,
-                            buisness_interest: $scope.business_matters
+                            business_age : $scope.business_age,
+                            business_track :  $scope.track_business,
+                            business_interest: $scope.business_matters
                         };
                             $cordovaSpinnerDialog.show("Please Wait..","", true);
                             var res = $http.post(baseURL + 'business', dataObj);
@@ -343,8 +357,8 @@ DuqaanCtrl.controller("DuqaanRegistrationCompleteCtrl", function($scope, $rootSc
                                 $cordovaSpinnerDialog.hide();
                                 if(data.success == true){
                                     window.plugins.toast.showShortCenter(data.msg);
-                                    localStorage.setItem("user_id", data.user.id );
-                                    localStorage.setItem("employee_list", JSON.stringify(data.user.employee_list));
+//                                    localStorage.setItem("user_id", data.id );
+//                                    localStorage.setItem("employee_list", JSON.stringify(data.user.employee_list));
                                     localStorage.setItem("business_details_status", true);
                                     $location.path('/welcome');
                                  }else if(data.success == false){
@@ -420,7 +434,7 @@ DuqaanCtrl.controller("DuqaanForgotPasswordCtrl", function($scope, $rootScope, $
 });
 
 //Welcome Screen
-DuqaanCtrl.controller("WelcomeCtrl", function($scope, $rootScope, $location, $http, $cordovaDialogs, $cordovaSpinnerDialog){
+DuqaanCtrl.controller("WelcomeCtrl", function($scope, $rootScope, $location, $http, $cordovaNetwork, $cordovaDialogs, $cordovaSpinnerDialog){
 
         $scope.userName = localStorage.getItem("user_full_name");
         localStorage.setItem("page_id", "5");
@@ -481,17 +495,36 @@ DuqaanCtrl.controller("POSCtrl", function($scope, $rootScope, $location, $cordov
 
             $scope.showEmp = false;
             $scope.customerSelectedName = "";
+            $scope.employee = "";
 
-            $scope.employee = "self";
-
-            console.log("value in : " + localStorage.getItem("employee_list"));
-            if(localStorage.getItem("employee_list") == "undefined"){
-                  $scope.employeeList = "";
-            }else{
-              $scope.employeeList = JSON.parse(localStorage.getItem("employee_list")) ;
-            }
-
-            console.log("location list: " + JSON.stringify($scope.employeeList));
+            /*============Employee list===========*/
+            var dataObject = {
+                              id : localStorage.getItem("user_id")
+                          };
+            $cordovaSpinnerDialog.show("Please Wait..","", true);
+            var res = $http.post(baseURL + 'employeelist', dataObject);
+              console.log("employee list api parameter: " + JSON.stringify(dataObject));
+            res.success(function(data, status, headers, config) {
+            console.log("home screen api parameter Success: " + JSON.stringify(data));
+                $cordovaSpinnerDialog.hide();
+                if(data.success == true){
+                      $scope.employeeList = data.employee_list;
+                 }else if(data.success == false){
+                    window.plugins.toast.showShortCenter(data.msg);
+                 }else {
+                      window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+                  }
+            });
+            res.error(function(data, status, headers, config) {
+                    $cordovaSpinnerDialog.hide();
+                    if (!$cordovaNetwork.isOnline()) {
+                        window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                    } else {
+                        window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                    }
+                    console.log("employee list api failure message: " + JSON.stringify({ data: data }));
+                });
+            /*===============End==================*/
 
             /*  Array eisting ot Not   */
                 function in_array(array, id) {
@@ -505,7 +538,7 @@ DuqaanCtrl.controller("POSCtrl", function($scope, $rootScope, $location, $cordov
 
                 $scope.categoryClicked12 = function(item){
                       var dataObject = {
-                                        id : '5a5415a8-6bb3-4d08-bd58-ef41f394126c',
+                                        id : localStorage.getItem("user_id"),
                                         category: item
                                     };
                       $cordovaSpinnerDialog.show("Please Wait..","", true);
@@ -569,7 +602,7 @@ DuqaanCtrl.controller("POSCtrl", function($scope, $rootScope, $location, $cordov
               /*================service api started================*/
 
               var dataObj = {
-                                id : '5a5415a8-6bb3-4d08-bd58-ef41f394126c'
+                                id : localStorage.getItem("user_id")
                             };
               $cordovaSpinnerDialog.show("Please Wait..","", true);
               var res = $http.post(baseURL + 'servicelist', dataObj);
@@ -597,8 +630,8 @@ DuqaanCtrl.controller("POSCtrl", function($scope, $rootScope, $location, $cordov
 
               $scope.nameClicked = function(item) {
                     $scope.customerSelectedName = {
-                            employeeName : item.fullName,
-                            emp_id : item.id
+                            employeeName : item.employeeName,
+                            emp_id : item.emp_id
                         };
                 console.log("name selected : " + JSON.stringify($scope.customerSelectedName));
               }
@@ -606,29 +639,33 @@ DuqaanCtrl.controller("POSCtrl", function($scope, $rootScope, $location, $cordov
                     $scope.isVisible=true;
                 }
                 $scope.closePopUp=function(){
+                if($scope.employee == ""){
+                    alert("Please select the employee first");
+                }else{
                     for(var i = 0; i < $scope.items.length; i++) {
                         delete $scope.items[i]['$$hashKey'];
                     }
 
-                    if($scope.employee == "self"){
-                        $scope.customerSelectedName = {
-                                    employeeName : localStorage.getItem("user_full_name"),
-                                    emp_id : localStorage.getItem("user_id")
-                        };
-                    }
+//                    if($scope.employee == "self"){
+//                        $scope.customerSelectedName = {
+//                                    employeeName : localStorage.getItem("user_full_name"),
+//                                    emp_id : localStorage.getItem("user_id")
+//                        };
+//                    }
                     $scope.isVisible=false;
                     $location.path('/payment/'+JSON.stringify($scope.customerSelectedName)+'/'+ JSON.stringify($scope.items)+'/'+ $scope.sum);
+                }
                 }
               $scope.payClicked = function() {
                 if($scope.items.length == 0){
                     alert("Add a item first");
                     return false;
                 }else {
-                    if($scope.employeeList == ""){
-                        $scope.customerSelectedName = {
-                            employeeName : localStorage.getItem("user_full_name"),
-                            emp_id : localStorage.getItem("user_id")
-                        };
+                    if($scope.employeeList[0].employeeName == "self"){
+//                        $scope.customerSelectedName = {
+//                            employeeName : localStorage.getItem("user_full_name"),
+//                            emp_id : localStorage.getItem("user_id")
+//                        };
                         $location.path('/payment/'+JSON.stringify($scope.customerSelectedName)+'/'+ JSON.stringify($scope.items)+'/'+ $scope.sum);
                     }else{
                         $scope.openPopUp();
@@ -661,6 +698,8 @@ DuqaanCtrl.controller("PaymentScreenCtrl", function($scope, $rootScope, $routePa
         $scope.customerBillAmt = "";
         $scope.customerDiscountAmt = "";
         $scope.customerMandate = false;
+        $scope.showOther = false;
+        $scope.customerExists = false;
         $scope.customer_age = [];
         $scope.mode_payment = "cash";
 
@@ -681,23 +720,32 @@ DuqaanCtrl.controller("PaymentScreenCtrl", function($scope, $rootScope, $routePa
                     $scope.customerCash = parseInt($scope.customerCash) - parseInt($scope.customerCredit);
                 }else{
                     alert("Please fill the correct credit value");
+                    $scope.customerCredit = "";
                 }
             }
         }
 
         $scope.discountClick = function() {
+            if($scope.customerDiscountAmt!= ""){
                   $scope.customerBillAmt = parseInt($scope.customerPayableAmt) - parseInt($scope.customerDiscountAmt);
                   $scope.customerCash = $scope.customerBillAmt;
+                  $scope.customerCredit = "";
+            }else{
+                  $scope.customerBillAmt = parseInt($scope.customerPayableAmt);
+                  $scope.customerCash = $scope.customerBillAmt;
+                  $scope.customerCredit = "";
+            }
         }
 
         $scope.paymentSubmit = function(){
-        if($scope.customerMandate == true){
-            if($scope.customerName == ""){
-                alert("Customer name is mandatory");
-                return false;
-            }
+        if( $scope.customerCredit != ""){
+
             if($scope.customerContactNumber == ""){
                 alert("Customer contact number is mandatory");
+                return false;
+            }
+            if($scope.customerName == ""){
+                alert("Customer name is mandatory");
                 return false;
             }
             if($scope.customerAge == ""){
@@ -715,12 +763,17 @@ DuqaanCtrl.controller("PaymentScreenCtrl", function($scope, $rootScope, $routePa
     }
 
         $scope.finalSubmit = function(){
-            $scope.customer_info = {
+            if($scope.customerContactNumber == ""){
+                    $scope.customer_info = {};
+            }else{
+                 $scope.customer_info = {
+                                    user_id : localStorage.getItem("user_id"),
                                     name: $scope.customerName,
                                     contact_number : $scope.customerContactNumber,
                                     age : $scope.customerAge,
                                     gender: $scope.customerSex
                                 };
+            }
 
             var dataObj = {
                 id : localStorage.getItem("user_id"),
@@ -763,10 +816,55 @@ DuqaanCtrl.controller("PaymentScreenCtrl", function($scope, $rootScope, $routePa
                   console.log("Transaction api failure message: " + JSON.stringify({ data: data }));
               });
         }
+
+        $scope.customerContactBlur = function(){
+            if(angular.isUndefined($scope.customerContactNumber)){
+                window.plugins.toast.showShortCenter("Please fill the 10 digit mobile number");
+                $scope.customerContactNumber = "";
+                $scope.showOther = false;
+            }else if($scope.customerContactNumber == ""){
+                $scope.showOther = false;
+            }else{
+                    var dataObject = {
+                                      id : localStorage.getItem("user_id"),
+                                      contact_no : $scope.customerContactNumber
+                                  };
+                    $cordovaSpinnerDialog.show("Please Wait..","", true);
+                    var res = $http.post(baseURL + 'customerinfo ', dataObject);
+                      console.log("customerinfo  api parameter: " + JSON.stringify(dataObject));
+                    res.success(function(data, status, headers, config) {
+                    console.log("customerinfo  api parameter Success: " + JSON.stringify(data));
+                        $cordovaSpinnerDialog.hide();
+                        if(data.success == true){
+                                $scope.showOther = false;
+                              $scope.customerinfo  = data.customerinfo;
+                              $scope.customerName  = $scope.customerinfo.cust_name;
+                              $scope.credit = $scope.customerinfo.totalCredit;
+                         }else if(data.success == false){
+//                            $scope.customerExists = false;
+                            $scope.showOther = true;
+//                            window.plugins.toast.showShortCenter(data.msg);
+                         }else {
+//                            $scope.customerExists = false;
+                              window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+                          }
+                    });
+                    res.error(function(data, status, headers, config) {
+                            $cordovaSpinnerDialog.hide();
+                            if (!$cordovaNetwork.isOnline()) {
+                                window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                            } else {
+                                window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                            }
+                            console.log("customerinfo  api failure message: " + JSON.stringify({ data: data }));
+                        });
+
+            }
+        }
 });
 
 //EmployeeDetails Screen
-DuqaanCtrl.controller("EmployeeDetailsCtrl", function($scope, $rootScope, $location){
+DuqaanCtrl.controller("EmployeeDetailsCtrl", function($scope, $rootScope, $location, $http, $cordovaNetwork, $cordovaDialogs, $cordovaSpinnerDialog){
 
         $scope.userName = localStorage.getItem("user_full_name");
         localStorage.setItem("page_id", "8");
@@ -774,32 +872,312 @@ DuqaanCtrl.controller("EmployeeDetailsCtrl", function($scope, $rootScope, $locat
       $scope.addEmployeeClicked = function(){
             $location.path('/newEmployee');
         }
-      $scope.employeeDetails = function(){
-            $location.path('/employeeInformation');
+      $scope.employeeDetails = function(id){
+            $location.path('/employeeInformation/' + id);
         }
+
+        var dataObject = {
+                          id : localStorage.getItem("user_id")
+                      };
+        $cordovaSpinnerDialog.show("Please Wait..","", true);
+        var res = $http.post(baseURL + 'employeelist', dataObject);
+          console.log("employee list api parameter: " + JSON.stringify(dataObject));
+        res.success(function(data, status, headers, config) {
+        console.log("home screen api parameter Success: " + JSON.stringify(data));
+            $cordovaSpinnerDialog.hide();
+            if(data.success == true){
+                  $scope.employeelist = data.employee_list;
+             }else if(data.success == false){
+                window.plugins.toast.showShortCenter(data.msg);
+             }else {
+                  window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+              }
+        });
+        res.error(function(data, status, headers, config) {
+                $cordovaSpinnerDialog.hide();
+                if (!$cordovaNetwork.isOnline()) {
+                    window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                } else {
+                    window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                }
+                console.log("employee list api failure message: " + JSON.stringify({ data: data }));
+            });
 
 });
 
 //EmployeeInformation Screen
-DuqaanCtrl.controller("EmployeeInformationCtrl", function($scope, $rootScope, $location, $cordovaDialogs, $cordovaSpinnerDialog){
+DuqaanCtrl.controller("EmployeeInformationCtrl", function($scope, $rootScope, $routeParams, $location, $http, $cordovaNetwork, $cordovaDialogs, $cordovaSpinnerDialog){
 
         $scope.userName = localStorage.getItem("user_full_name");
         localStorage.setItem("page_id", "9");
 
-      $scope.gotoPos = function(){
-            $location.path('/pos');
-        }
+        $scope.emp_id = $routeParams.emp_id;
+
+            $scope.name = "";
+            $scope.contact_number = "";
+            $scope.age = "";
+            $scope.sex = "";
+
+             $scope.ageList = [];
+             for(var i = 14; i < 60; i++){
+                 $scope.ageList.push(i);
+             }
+
+        var dataObject = {
+                          id : localStorage.getItem("user_id"),
+                          emp_id : $scope.emp_id
+                      };
+        $cordovaSpinnerDialog.show("Please Wait..","", true);
+        var res = $http.post(baseURL + 'employeelist', dataObject);
+          console.log("each employee list api parameter: " + JSON.stringify(dataObject));
+        res.success(function(data, status, headers, config) {
+        console.log("each employee list parameter Success: " + JSON.stringify(data));
+            $cordovaSpinnerDialog.hide();
+            if(data.success == true){
+                  $scope.employeeInfo = data.employee_details;
+                  $scope.emp_id = $scope.employeeInfo.emp_id;
+                  $scope.name = $scope.employeeInfo.employeeName;
+                  $scope.contact_number = $scope.employeeInfo.contact_no;
+                  $scope.txn_amount = $scope.employeeInfo.txn_amount;
+                  if($scope.employeeInfo.age){
+                     $scope.age = $scope.employeeInfo.age.toString();
+                  }
+                  $scope.sex = $scope.employeeInfo.sex;
+             }else if(data.success == false){
+                window.plugins.toast.showShortCenter(data.msg);
+             }else {
+                  window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+              }
+        });
+        res.error(function(data, status, headers, config) {
+                $cordovaSpinnerDialog.hide();
+                if (!$cordovaNetwork.isOnline()) {
+                    window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                } else {
+                    window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                }
+                console.log("each employee list api failure message: " + JSON.stringify({ data: data }));
+            });
+
+          $scope.saveClicked = function(){
+              if($scope.name == ""){
+                  alert("Please enter employee name");
+                  return false;
+              }
+              if($scope.contact_number == ""){
+                  alert("Please enter employee contact number");
+                  return false;
+              }
+              if($scope.age == ""){
+                  alert("Please select the employee age");
+                  return false;
+              }
+              if($scope.sex == ""){
+                  alert("Please select the employee gender");
+                  return false;
+              }
+           var dataObject = {
+                             id : localStorage.getItem("user_id"),
+                             employee:
+                                { "emp_id": $scope.emp_id,
+                                  "employeeName": $scope.name,
+                                  "contact_no": $scope.contact_number,
+                                  "age": $scope.age,
+                                  "sex": $scope.sex,
+                                  txn_amount : $scope.txn_amount
+
+                                }
+                         };
+           $cordovaSpinnerDialog.show("Please Wait..","", true);
+           var res = $http.post(baseURL + 'employee_update', dataObject);
+             console.log("employee update api parameter: " + JSON.stringify(dataObject));
+           res.success(function(data, status, headers, config) {
+           console.log("employee add api parameter Success: " + JSON.stringify(data));
+               $cordovaSpinnerDialog.hide();
+               if(data.success == true){
+                     window.plugins.toast.showShortCenter(data.msg);
+                     $rootScope.back();
+                }else if(data.success == false){
+                   window.plugins.toast.showShortCenter(data.msg);
+                }else {
+                     window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+                 }
+           });
+           res.error(function(data, status, headers, config) {
+                   $cordovaSpinnerDialog.hide();
+                   if (!$cordovaNetwork.isOnline()) {
+                       window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                   } else {
+                       window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                   }
+                   console.log("employee update api failure message: " + JSON.stringify({ data: data }));
+               });
+
+          }
+
+           $scope.deleteClicked = function(){
+              var dataObject = {
+                          id : localStorage.getItem("user_id"),
+                          emp_id : $scope.employeeInfo.emp_id
+                      };
+        $cordovaSpinnerDialog.show("Please Wait..","", true);
+        var res = $http.post(baseURL + 'employee_rm ', dataObject);
+          console.log("employee remove api parameter: " + JSON.stringify(dataObject));
+        res.success(function(data, status, headers, config) {
+        console.log("employee remove parameter Success: " + JSON.stringify(data));
+            $cordovaSpinnerDialog.hide();
+            if(data.success == true){
+                  $rootScope.back();
+             }else if(data.success == false){
+                window.plugins.toast.showShortCenter(data.msg);
+             }else {
+                  window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+              }
+        });
+        res.error(function(data, status, headers, config) {
+                $cordovaSpinnerDialog.hide();
+                if (!$cordovaNetwork.isOnline()) {
+                    window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                } else {
+                    window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                }
+                console.log("employee remove failure message: " + JSON.stringify({ data: data }));
+            });
+           }
+
+        /*================All transaction info by employee=============*/
+             var dataObject = {
+                               id : localStorage.getItem("user_id"),
+                               emp_id : $scope.emp_id
+                           };
+             $cordovaSpinnerDialog.show("Please Wait..","", true);
+             var res = $http.post(baseURL + 'transactionlist', dataObject);
+               console.log("employee transaction api parameter: " + JSON.stringify(dataObject));
+             res.success(function(data, status, headers, config) {
+             console.log("employee transaction parameter Success: " + JSON.stringify(data));
+                 $cordovaSpinnerDialog.hide();
+                 if(data.success == true){
+                        $scope.employee_transaction = data.employee_transaction;
+                  }else if(data.success == false){
+                     window.plugins.toast.showShortCenter(data.msg);
+                  }else {
+                       window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+                   }
+             });
+             res.error(function(data, status, headers, config) {
+                     $cordovaSpinnerDialog.hide();
+                     if (!$cordovaNetwork.isOnline()) {
+                         window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                     } else {
+                         window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                     }
+                     console.log("employee transaction list api failure message: " + JSON.stringify({ data: data }));
+                 });
 
 });
 
 //NewEmployee Screen
-DuqaanCtrl.controller("NewEmployeeCtrl", function($scope, $rootScope, $location, $cordovaDialogs, $cordovaSpinnerDialog){
+DuqaanCtrl.controller("NewEmployeeCtrl", function($scope, $rootScope, $location, $http, $cordovaNetwork, $cordovaDialogs, $cordovaSpinnerDialog){
 
         $scope.userName = localStorage.getItem("user_full_name");
         localStorage.setItem("page_id", "10");
-      $scope.gotoPos = function(){
-            $location.path('/pos');
+
+        $scope.name = "";
+        $scope.contact_number = "";
+        $scope.age = "";
+        $scope.sex = "";
+
+        $scope.ageList = [];
+        for(var i = 14; i < 60; i++){
+            $scope.ageList.push(i);
         }
+
+        var dataObject = {
+                          id : localStorage.getItem("user_id")
+                      };
+        $cordovaSpinnerDialog.show("Please Wait..","", true);
+        var res = $http.post(baseURL + 'employeelist', dataObject);
+          console.log("employee list api parameter: " + JSON.stringify(dataObject));
+        res.success(function(data, status, headers, config) {
+        console.log("home screen api parameter Success: " + JSON.stringify(data));
+            $cordovaSpinnerDialog.hide();
+            if(data.success == true){
+                  $scope.employeelist = data.employee_list;
+             }else if(data.success == false){
+                window.plugins.toast.showShortCenter(data.msg);
+             }else {
+                  window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+              }
+        });
+        res.error(function(data, status, headers, config) {
+                $cordovaSpinnerDialog.hide();
+                if (!$cordovaNetwork.isOnline()) {
+                    window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                } else {
+                    window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                }
+                console.log("employee list api failure message: " + JSON.stringify({ data: data }));
+            });
+
+        $scope.saveClicked = function(){
+            if($scope.name == ""){
+                alert("Please enter employee name");
+                return false;
+            }
+            if($scope.contact_number == ""){
+                alert("Please enter employee contact number");
+                return false;
+            }
+            if($scope.age == ""){
+                alert("Please select the employee age");
+                return false;
+            }
+            if($scope.sex == ""){
+                alert("Please select the employee gender");
+                return false;
+            }
+         var dataObject = {
+                           id : localStorage.getItem("user_id"),
+                           employee_list: [
+                             	{ "emp_id": "",
+                             	  "employeeName": $scope.name,
+                             	  "contact_no": $scope.contact_number,
+                             	  "age": $scope.age,
+                             	  "sex": $scope.sex,
+                             	  "txn_amount": 0
+
+                             	}]
+                       };
+         $cordovaSpinnerDialog.show("Please Wait..","", true);
+         var res = $http.post(baseURL + 'employee_add', dataObject);
+           console.log("employee add api parameter: " + JSON.stringify(dataObject));
+         res.success(function(data, status, headers, config) {
+         console.log("employee add api parameter Success: " + JSON.stringify(data));
+             $cordovaSpinnerDialog.hide();
+             if(data.success == true){
+                   window.plugins.toast.showShortCenter(data.msg);
+                   $rootScope.back();
+              }else if(data.success == false){
+                 window.plugins.toast.showShortCenter(data.msg);
+              }else {
+                   window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+               }
+         });
+         res.error(function(data, status, headers, config) {
+                 $cordovaSpinnerDialog.hide();
+                 if (!$cordovaNetwork.isOnline()) {
+                     window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                 } else {
+                     window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                 }
+                 console.log("employee add api failure message: " + JSON.stringify({ data: data }));
+             });
+
+        }
+
+         $scope.cancelClicked = function(){
+            $rootScope.back();
+         }
 
 });
 
@@ -824,3 +1202,43 @@ DuqaanCtrl.controller("AttendanceInformationCtrl", function($scope, $rootScope, 
         localStorage.setItem("page_id", "13");
 
 });
+
+//CustomerDetails Screen
+DuqaanCtrl.controller("CustomerDetailsCtrl", function($scope, $rootScope, $location, $http, $cordovaNetwork, $cordovaDialogs, $cordovaSpinnerDialog){
+
+        $scope.userName = localStorage.getItem("user_full_name");
+        localStorage.setItem("page_id", "14");
+
+      $scope.customerDetails = function(id){
+            $location.path('/customerInformation/' + id);
+        }
+
+        var dataObject = {
+                          id : localStorage.getItem("user_id")
+                      };
+        $cordovaSpinnerDialog.show("Please Wait..","", true);
+        var res = $http.post(baseURL + 'customerlist', dataObject);
+          console.log("customer list api parameter: " + JSON.stringify(dataObject));
+        res.success(function(data, status, headers, config) {
+        console.log("customer list api parameter Success: " + JSON.stringify(data));
+            $cordovaSpinnerDialog.hide();
+            if(data.success == true){
+                  $scope.customerList = data.customer_list;
+             }else if(data.success == false){
+                window.plugins.toast.showShortCenter(data.msg);
+             }else {
+                  window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+              }
+        });
+        res.error(function(data, status, headers, config) {
+                $cordovaSpinnerDialog.hide();
+                if (!$cordovaNetwork.isOnline()) {
+                    window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                } else {
+                    window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                }
+                console.log("customer list api failure message: " + JSON.stringify({ data: data }));
+            });
+
+});
+

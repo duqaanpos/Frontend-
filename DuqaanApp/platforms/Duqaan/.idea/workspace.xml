@@ -49,30 +49,62 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="422" column="84" selection-start-line="422" selection-start-column="84" selection-end-line="422" selection-end-column="84" />
+            <state relative-caret-position="391">
+              <caret line="1239" column="37" selection-start-line="1239" selection-start-column="37" selection-end-line="1239" selection-end-column="37" />
               <folding>
-                <element signature="e#0#37351#0" expanded="false" />
-                <element signature="e#0#37351#0" expanded="false" />
-                <element signature="e#0#37351#0" expanded="false" />
-                <element signature="e#0#37351#0" expanded="false" />
-                <element signature="e#0#37351#0" expanded="false" />
-                <element signature="e#0#37351#0" expanded="false" />
-                <element signature="e#0#37351#0" expanded="false" />
-                <element signature="e#0#37351#0" expanded="false" />
-                <element signature="e#0#37351#0" expanded="false" />
-                <element signature="e#0#37351#0" expanded="false" />
-                <element signature="e#0#37351#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#58452#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Welcome.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/Welcome.html">
+      <file leaf-file-name="CustomerDetails.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/CustomerDetails.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="381">
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeInformation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeInformation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -1961,7 +1993,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/www/templates/CustomerMyRequest.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/CustomerServiceHistory.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/ProviderServiceHistory.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/ProviderMyRequest.html" />
@@ -1980,22 +2011,16 @@
         <option value="$PROJECT_DIR$/assets/www/js/duqaan/controllersPimPros.js" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/ForgetPassword.html" />
         <option value="$PROJECT_DIR$/assets/www/css/duqaan/stylePos.css" />
-        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/RegistrationBasic.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/Employee Information.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/Employee Details.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/New Employee.html" />
-        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeInformation.html" />
-        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/NewEmployee.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/CustomerHomePage.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/RegistrationComplete.html" />
-        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeDetails.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/AttendanceInformtion.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/LoginScreen.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmpAttendance.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/Dashboard.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/popup.html" />
-        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/PaymentScreen.html" />
-        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/menu.html" />
         <option value="$PROJECT_DIR$/assets/www/css/duqaan/style.css" />
         <option value="$PROJECT_DIR$/src/services/duqaan/MainActivity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
@@ -2005,13 +2030,20 @@
         <option value="$PROJECT_DIR$/assets/www/index.html" />
         <option value="$PROJECT_DIR$/src/hu/dpal/phonegap/plugins/SpinnerDialog.java" />
         <option value="$PROJECT_DIR$/src/org/apache/cordova/file/AssetFilesystem.java" />
-        <option value="$PROJECT_DIR$/assets/www/js/app.js" />
-        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/POS.html" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/xml/config.xml" />
         <option value="$PROJECT_DIR$/assets/www/cordova_plugins.js" />
-        <option value="$PROJECT_DIR$/assets/www/js/controllers.js" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/Welcome.html" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/NewEmployee.html" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/RegistrationBasic.html" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/POS.html" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/PaymentScreen.html" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeDetails.html" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeInformation.html" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/menu.html" />
+        <option value="$PROJECT_DIR$/assets/www/js/app.js" />
+        <option value="$PROJECT_DIR$/assets/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/CustomerDetails.html" />
       </list>
     </option>
   </component>
@@ -2046,12 +2078,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2062,38 +2091,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Gradle Scripts" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Duqaan" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Duqaan" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Duqaan" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Duqaan" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2168,7 +2165,15 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="duqaan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="employee" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2182,8 +2187,16 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2193,6 +2206,9 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -2213,22 +2229,22 @@
     <property name="ExportApk.SignV2" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\PimProsApp\PimProsApp\platforms\PimpPros\assets\www\fontsPim" />
-      <recent name="D:\PimProsApp\PimProsApp\platforms\PimpPros\assets\www" />
-      <recent name="D:\PimProsApp\PimProsApp\platforms\PimpPros\assets\www\css\duqaan" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Duqaan\frontend\DuqaanApp\platforms\Duqaan\assets\www\templates\duqaan\employee" />
+      <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\src" />
+      <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\assets\www\plugins" />
+      <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\assets\www\js" />
+      <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\assets\www\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="nl.xservices.plugins" />
       <recent name="fr.smile.cordova.fileopener" />
       <recent name="services.pimppros" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\src" />
-      <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\assets\www\plugins" />
-      <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\assets\www\js" />
-      <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\assets\www\templates" />
-      <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\assets\www\templates\duqaan" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PimProsApp\PimProsApp\platforms\PimpPros\assets\www\fontsPim" />
+      <recent name="D:\PimProsApp\PimProsApp\platforms\PimpPros\assets\www" />
+      <recent name="D:\PimProsApp\PimProsApp\platforms\PimpPros\assets\www\css\duqaan" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.Duqaan">
@@ -2697,24 +2713,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270869" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32367972" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24886878" sideWeight="0.50554675" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9888579" sideWeight="0.5103627" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20102215" sideWeight="0.48963732" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.80919933" sideWeight="0.5136157" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.95911413" sideWeight="0.48638427" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5417377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270869" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270869" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27155825" sideWeight="0.49445325" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66269165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27155825" sideWeight="0.49445325" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966322" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09304085" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -2733,6 +2748,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966322" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66269165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2788,74 +2804,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/apache/cordova/file/EncodingException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/cordova/file/DirectoryManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hu/dpal/phonegap/plugins/SpinnerDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/cordova/camera/ExifHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/cordova/inappbrowser/InAppBrowserDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/cordova/filetransfer/FileTransfer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/cordova/file/AssetFilesystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/apache/cordova/camera/CameraLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/POS.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="75" selection-start-line="71" selection-start-column="75" selection-end-line="71" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2945,41 +2897,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/images/marker.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/images/mark.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/images/map-pointer.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/images/main-bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/images/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/images/edit-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/images/brothers.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/images/marker.png" />
+    <entry file="file://$PROJECT_DIR$/assets/www/images/mark.jpg" />
+    <entry file="file://$PROJECT_DIR$/assets/www/images/map-pointer.png" />
+    <entry file="file://$PROJECT_DIR$/assets/www/images/main-bg.jpg" />
+    <entry file="file://$PROJECT_DIR$/assets/www/images/logo.png" />
+    <entry file="file://$PROJECT_DIR$/assets/www/images/edit-icon.png" />
+    <entry file="file://$PROJECT_DIR$/assets/www/images/brothers.png" />
     <entry file="file://$PROJECT_DIR$/assets/www/images/b3.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2989,7 +2913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2997,7 +2920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3040,7 +2962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3063,7 +2984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3071,27 +2991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="345" column="48" selection-start-line="345" selection-start-column="48" selection-end-line="345" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="422" column="84" selection-start-line="422" selection-start-column="84" selection-end-line="422" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#37351#0" expanded="false" />
-            <element signature="e#0#37351#0" expanded="false" />
-            <element signature="e#0#37351#0" expanded="false" />
-            <element signature="e#0#37351#0" expanded="false" />
-            <element signature="e#0#37351#0" expanded="false" />
-            <element signature="e#0#37351#0" expanded="false" />
-            <element signature="e#0#37351#0" expanded="false" />
-            <element signature="e#0#37351#0" expanded="false" />
-            <element signature="e#0#37351#0" expanded="false" />
-            <element signature="e#0#37351#0" expanded="false" />
-            <element signature="e#0#37351#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3099,6 +2998,120 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/NewEmployee.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/RegistrationBasic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/POS.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="70" column="101" selection-start-line="70" selection-start-column="93" selection-end-line="70" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/PaymentScreen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="46" column="103" selection-start-line="46" selection-start-column="91" selection-end-line="46" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeInformation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="1239" column="37" selection-start-line="1239" selection-start-column="37" selection-end-line="1239" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#58452#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/CustomerDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
           <folding />
         </state>
       </provider>

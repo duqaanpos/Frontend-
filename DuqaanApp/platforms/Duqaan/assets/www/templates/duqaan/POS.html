@@ -68,8 +68,7 @@
 				  <!--employeeList-->
 				  <div class="modal-body" style="color: black;">
 					  <md-radio-group ng-model="employee">
-						  <md-radio-button value="self">Self</md-radio-button>
-						  <md-radio-button  ng-repeat="item in employeeList" ng-value="item.fullName" ng-click="nameClicked(item)">{{item.fullName}}</md-radio-button>
+						  <md-radio-button  ng-repeat="item in employeeList " ng-value="item.fullName" ng-click="nameClicked(item)">{{item.fullName}}</md-radio-button>
 					  </md-radio-group>
 				  </div>
 				  <div class="modal-footer">

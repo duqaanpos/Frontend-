@@ -34,7 +34,7 @@ Duqaan.config(['$routeProvider', function($routeProvider) {
                         templateUrl: 'templates/duqaan/employee/EmployeeDetails.html',
                         controller: 'EmployeeDetailsCtrl'
                       }).
-                    when('/employeeInformation' ,{
+                    when('/employeeInformation/:emp_id' ,{
                         templateUrl: 'templates/duqaan/employee/EmployeeInformation.html',
                         controller: 'EmployeeInformationCtrl'
                       }).
@@ -49,6 +49,10 @@ Duqaan.config(['$routeProvider', function($routeProvider) {
                     when('/attendanceInfo' ,{
                         templateUrl: 'templates/duqaan/employee/AttendanceInformation.html',
                         controller: 'AttendanceInformationCtrl'
+                      }).
+                    when('/customerDetails' ,{
+                        templateUrl: 'templates/duqaan/employee/CustomerDetails.html',
+                        controller: 'CustomerDetailsCtrl'
                       })
                     .otherwise({
                         redirectTo: '/login',
@@ -174,10 +178,10 @@ Duqaan.run(function($rootScope, $window,$location,$cordovaDialogs,$http,$cordova
                                        }
                               });
 
-                              $scope.dashboardClicked = function(){
-                                      $rootScope.selectedTab = "dashboard";
+                              $scope.homeClicked = function(){
+                                      $rootScope.selectedTab = "home";
                                       $uibModalInstance.dismiss();
-                                      $location.path('/dashboard');
+                                      $location.path('/welcome');
                                 }
 
                               $scope.profileClicked = function(){
@@ -195,7 +199,7 @@ Duqaan.run(function($rootScope, $window,$location,$cordovaDialogs,$http,$cordova
                                $scope.customerDetails = function(){
                                     $rootScope.selectedTab = "customer"
                                      $uibModalInstance.dismiss();
-                                     $rootScope.message();
+                                         $location.path('/customerDetails');
                                }
 
                                $scope.employeeAttendance = function(){

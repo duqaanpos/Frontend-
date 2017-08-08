@@ -23,7 +23,7 @@
     
     <div class="input-group marginBottom20">
       <span class="input-group-addon">Total Bill</span>
-      <input type="number" class="form-control" name="msg" disabled placeholder="₹ 3000" data-ng-model="customerBillAmt">
+      <input type="number" class="form-control" name="msg" disabled placeholder="total bill" data-ng-model="customerBillAmt">
     </div>
     <hr>
     
@@ -38,22 +38,27 @@
     </div>
     <hr>
     <h3 class="marginBottom10">Customer details</h3>
+
     <div class="form-group">
-    	<input type="text" class="form-control" placeholder="Customer Name" data-ng-model="customerName">
+        <input type="tel" class="form-control" required ng-pattern="/^[0-9]{10}$/" placeholder="Contact Number" ng-blur="customerContactBlur()" data-ng-model="customerContactNumber">
+    </div>
+
+    <div class="form-group" ng-show="showOther">
+    	<input type="text" class="form-control" placeholder="Customer Name" data-ng-model="customerName" ng-disabled="customerExists">
    	</div>
-    
-    <div class="form-group">
-    	<input type="tel" class="form-control" placeholder="Contact Number" data-ng-model="customerContactNumber">
-   	</div>
-   	
-   	<div class="form-group">
+        <h4 class="marginBottom10" ng-show="customerExists">Customer Credit</h4>
+    <div class="form-group" ng-show="customerExists">
+        <input type="text" class="form-control" placeholder="Customer Name" data-ng-model="credit" readonly>
+    </div>
+
+   	<div class="form-group" ng-show="showOther">
     	  <select name="options" class="form-control dropdown" data-ng-model="customerAge" ng-change="gotoPos()">
     	  	<option disabled value="">Age</option>
 			<option data-ng-repeat="age in customer_age" value="{{age}}">{{age}}</option>
     	  </select>
    		 </div>
    	
-   	<div class="form-group">
+   	<div class="form-group" ng-show="showOther">
     	  <select name="options" class="form-control dropdown" data-ng-model="customerSex">
     	  	<option disabled value="">Sex</option>
 			<option value="male">Male</option>
