@@ -1,0 +1,46 @@
+<header>
+	<div class="top-bar">
+		<div class="icon-left" ng-click="back()"> <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> </div>
+		<h1> Customer Transaction Info  </h1>
+		<div class="icon-right"> </div>
+	</div>
+</header>
+
+  <div class="container">
+  	<div class="row">
+  	
+  	<form>
+
+  	<!--<div class="form-group">-->
+    	<!--<input type="text" class="form-control" placeholder="Name" data-ng-model="name" required>-->
+   	<!--</div>-->
+
+   	<!--<hr>-->
+   	<!--<div class="input-group marginBottom10">-->
+      <!--<span class="input-group-addon">Credit Amount</span>-->
+      <!--<input type="text" class="form-control" name="msg" placeholder="₹ 56545" data-ng-model="" disabled>-->
+    <!--</div>-->
+   	<!---->
+   	<!--<div class="input-group marginBottom10">-->
+      <!--<span class="input-group-addon">Transactions Value</span>-->
+      <!--<input type="text" class="form-control" name="msg" placeholder="₹" ng-bind="txn_amount" disabled>-->
+    <!--</div>-->
+    
+    <!--<hr>-->
+    
+    <table class="table table-striped">
+    	
+    	<tr data-ng-repeat="transaction in customerTransactionList">
+    		<td>Transaction ID</td>
+    		<td>
+	<div class="form-group"><input type="text" class="form-control marginBottom10" ng-bind="transaction._id" placeholder="transaction id" disabled>
+	<input type="text" class="form-control" name="msg" placeholder="₹ 56545" ng-bind="transaction.totalBill" disabled>
+</div>
+				
+   	</td>
+    	</tr>
+    </table>
+ 		
+		</form>
+  	</div>
+  </div>

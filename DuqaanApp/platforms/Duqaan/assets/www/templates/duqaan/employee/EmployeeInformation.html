@@ -50,7 +50,7 @@
    	
    	<div class="input-group marginBottom10">
       <span class="input-group-addon">Transactions Value</span>
-      <input type="text" class="form-control" name="msg" placeholder="₹" ng-bind="txn_amount" disabled>
+      <input type="text" class="form-control" name="msg" placeholder="₹" data-ng-model="txn_amount" disabled>
     </div>
     
     <hr>
@@ -60,8 +60,8 @@
     	<tr data-ng-repeat="transaction in employee_transaction">
     		<td>Transaction ID</td>
     		<td>
-	<div class="form-group"><input type="text" class="form-control marginBottom10" ng-bind="transaction._id" placeholder="transaction id" disabled>
-	<input type="text" class="form-control" name="msg" placeholder="₹ 56545" ng-bind="transaction.totalBill" disabled>
+	<div class="form-group"><input type="text" class="form-control marginBottom10" data-ng-model="transaction._id" placeholder="transaction id" disabled>
+	<input type="text" class="form-control" name="msg" placeholder="₹ 56545" data-ng-model="transaction.totalBill" disabled>
 </div>
 				
    	</td>

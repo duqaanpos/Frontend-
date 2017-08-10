@@ -1,0 +1,26 @@
+<header>
+	<div class="top-bar">
+		<div class="icon-left"> <span ng-click="openAside('left', true, 'left-nav-main')"> <img src="images/menu.png" width="22" height="15" alt=""> </span> </div>
+		<h1> transaction History </h1>
+		<div class="icon-right"> </div>
+	</div>
+</header>
+  <div class="container">
+  	<div class="row">
+  	<form>
+	<div class="myCart" data-ng-repeat="transaction in transactionist" ng-click="transactionClicked(transaction)">
+		<h4 class="idHead">{{transaction._id}}</h4>
+		<h4>{{transaction.timestamp | date:'yyyy-MM-dd HH:mm:ss'}}</h4>
+		<div class="input-group marginBottom10 width100">
+		  <span class="input-group-addon whiteBackground width40 textLeft">Total Bill</span>
+		  <input type="text" class="form-control" name="msg" placeholder="Total Bill" data-ng-model="transaction.totalBill" disabled>
+		</div>
+
+		<div class="input-group marginBottom10 width100">
+		  <span class="input-group-addon whiteBackground width40 textLeft">Employee Name</span>
+		  <input type="text" class="form-control" name="msg" placeholder="Employee Name" ng-model="transaction.emp_id" disabled>
+		</div>
+  	</div>
+	</form>
+  	</div>
+  </div>

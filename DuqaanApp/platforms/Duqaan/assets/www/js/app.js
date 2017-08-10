@@ -53,6 +53,18 @@ Duqaan.config(['$routeProvider', function($routeProvider) {
                     when('/customerDetails' ,{
                         templateUrl: 'templates/duqaan/employee/CustomerDetails.html',
                         controller: 'CustomerDetailsCtrl'
+                      }).
+                    when('/customerInformation/:id', {
+                        templateUrl: 'templates/duqaan/employee/CustomerInformation.html',
+                        controller: 'CustomerInformationCtrl'
+                    }).
+                    when('/transactionHistory' ,{
+                        templateUrl: 'templates/duqaan/TransactionHistory.html',
+                        controller: 'transactionHistoryCtrl'
+                      }).
+                    when('/transactionHistoryDetails/:id' ,{
+                        templateUrl: 'templates/duqaan/TransactionHistoryDetails.html',
+                        controller: 'TransactionHistoryDetailsCtrl'
                       })
                     .otherwise({
                         redirectTo: '/login',
@@ -202,10 +214,10 @@ Duqaan.run(function($rootScope, $window,$location,$cordovaDialogs,$http,$cordova
                                          $location.path('/customerDetails');
                                }
 
-                               $scope.employeeAttendance = function(){
-                                   $rootScope.selectedTab = "employeeAttendance";
+                               $scope.transactionHistory = function(){
+                                   $rootScope.selectedTab = "transactionHistory";
                                    $uibModalInstance.dismiss();
-                                   $location.path('/empAttendance');
+                                   $location.path('/transactionHistory');
                                }
 
                               $scope.resetPasswordClicked = function(){

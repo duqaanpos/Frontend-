@@ -49,62 +49,79 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="1239" column="37" selection-start-line="1239" selection-start-column="37" selection-end-line="1239" selection-end-column="37" />
+            <state relative-caret-position="183">
+              <caret line="1341" column="78" selection-start-line="1341" selection-start-column="78" selection-end-line="1341" selection-end-column="78" />
               <folding>
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
-                <element signature="e#0#58452#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
+                <element signature="e#0#64499#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerDetails.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/CustomerDetails.html">
+      <file leaf-file-name="TransactionHistoryDetails.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/TransactionHistoryDetails.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            <state relative-caret-position="397">
+              <caret line="38" column="94" selection-start-line="38" selection-start-column="94" selection-end-line="38" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeInformation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeInformation.html">
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+            <state relative-caret-position="385">
+              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/www/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="56" column="46" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -1993,10 +2010,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/www/templates/CustomerServiceHistory.html" />
-        <option value="$PROJECT_DIR$/assets/www/templates/ProviderServiceHistory.html" />
-        <option value="$PROJECT_DIR$/assets/www/templates/ProviderMyRequest.html" />
-        <option value="$PROJECT_DIR$/assets/www/templates/CustomerOnTheWay.html" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/Login.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/Registration.html" />
@@ -2027,7 +2040,6 @@
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/src/com/adobe/phonegap/push/RegistrationIntentService.java" />
         <option value="$PROJECT_DIR$/src/nl/xservices/plugins/Toast.java" />
-        <option value="$PROJECT_DIR$/assets/www/index.html" />
         <option value="$PROJECT_DIR$/src/hu/dpal/phonegap/plugins/SpinnerDialog.java" />
         <option value="$PROJECT_DIR$/src/org/apache/cordova/file/AssetFilesystem.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
@@ -2039,11 +2051,16 @@
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/POS.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/PaymentScreen.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeDetails.html" />
-        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeInformation.html" />
-        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/menu.html" />
-        <option value="$PROJECT_DIR$/assets/www/js/app.js" />
-        <option value="$PROJECT_DIR$/assets/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/TrasactionHistoryDetails.html" />
+        <option value="$PROJECT_DIR$/assets/www/index.html" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/TransactionHistory.html" />
         <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/CustomerDetails.html" />
+        <option value="$PROJECT_DIR$/assets/www/js/app.js" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/CustomerInformation.html" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeInformation.html" />
+        <option value="$PROJECT_DIR$/assets/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/TransactionHistoryDetails.html" />
+        <option value="$PROJECT_DIR$/assets/www/templates/duqaan/menu.html" />
       </list>
     </option>
   </component>
@@ -2204,6 +2221,54 @@
               <option name="myItemId" value="Duqaan" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Duqaan" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Duqaan" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Duqaan" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="duqaan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Duqaan" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -2231,10 +2296,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Duqaan\frontend\DuqaanApp\platforms\Duqaan\assets\www\templates\duqaan\employee" />
+      <recent name="D:\Duqaan\frontend\DuqaanApp\platforms\Duqaan\assets\www\css\duqaan" />
+      <recent name="D:\Duqaan\frontend\DuqaanApp\platforms\Duqaan\assets\www\templates\duqaan" />
       <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\src" />
       <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\assets\www\plugins" />
-      <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\assets\www\js" />
-      <recent name="D:\PimProsApp\DuqaanApp\platforms\Duqaan\assets\www\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="nl.xservices.plugins" />
@@ -2804,39 +2869,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/apache/cordova/camera/CameraLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/images/user_pic.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/images/video_play_button02.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/images/user-photo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/images/user.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2907,13 +2939,6 @@
     <entry file="file://$PROJECT_DIR$/assets/www/images/b3.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/duqaan/MainActivity.java">
@@ -2994,14 +3019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/Welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/NewEmployee.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -3042,76 +3059,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeInformation.html">
+    <entry file="file://$PROJECT_DIR$/assets/www/css/duqaan/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/menu.html">
+    <entry file="file://$PROJECT_DIR$/assets/www/css/duqaan/styleOld.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="-1260">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/Welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/TransactionHistory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/CustomerInformation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/EmployeeInformation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="63" column="92" selection-start-line="63" selection-start-column="92" selection-end-line="63" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/CustomerDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        <state relative-caret-position="408">
+          <caret line="56" column="46" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="1239" column="37" selection-start-line="1239" selection-start-column="37" selection-end-line="1239" selection-end-column="37" />
+        <state relative-caret-position="183">
+          <caret line="1341" column="78" selection-start-line="1341" selection-start-column="78" selection-end-line="1341" selection-end-column="78" />
           <folding>
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
-            <element signature="e#0#58452#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
+            <element signature="e#0#64499#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/employee/CustomerDetails.html">
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/TransactionHistoryDetails.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        <state relative-caret-position="397">
+          <caret line="38" column="94" selection-start-line="38" selection-start-column="94" selection-end-line="38" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/templates/duqaan/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
           <folding />
         </state>
       </provider>

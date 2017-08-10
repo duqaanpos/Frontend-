@@ -1057,7 +1057,7 @@ DuqaanCtrl.controller("EmployeeInformationCtrl", function($scope, $rootScope, $r
              console.log("employee transaction parameter Success: " + JSON.stringify(data));
                  $cordovaSpinnerDialog.hide();
                  if(data.success == true){
-                        $scope.employee_transaction = data.employee_transaction;
+                        $scope.employee_transaction = data.Employee_Transactions;
                   }else if(data.success == false){
                      window.plugins.toast.showShortCenter(data.msg);
                   }else {
@@ -1223,7 +1223,7 @@ DuqaanCtrl.controller("CustomerDetailsCtrl", function($scope, $rootScope, $locat
         console.log("customer list api parameter Success: " + JSON.stringify(data));
             $cordovaSpinnerDialog.hide();
             if(data.success == true){
-                  $scope.customerList = data.customer_list;
+                  $scope.customerList = data.Customer_List;
              }else if(data.success == false){
                 window.plugins.toast.showShortCenter(data.msg);
              }else {
@@ -1242,3 +1242,118 @@ DuqaanCtrl.controller("CustomerDetailsCtrl", function($scope, $rootScope, $locat
 
 });
 
+//CustomerDetails Screen
+DuqaanCtrl.controller("CustomerInformationCtrl", function($scope, $rootScope, $routeParams, $location, $http, $cordovaNetwork, $cordovaDialogs, $cordovaSpinnerDialog){
+
+        $scope.userName = localStorage.getItem("user_full_name");
+        localStorage.setItem("page_id", "17");
+
+      $scope.customerId = $routeParams.id;
+
+        var dataObject = {
+                          id : localStorage.getItem("user_id"),
+                          cust_id : $scope.customerId
+                      };
+        $cordovaSpinnerDialog.show("Please Wait..","", true);
+        var res = $http.post(baseURL + 'transactionlist', dataObject);
+          console.log("customer transaction list api parameter: " + JSON.stringify(dataObject));
+        res.success(function(data, status, headers, config) {
+        console.log("customer transaction list api parameter Success: " + JSON.stringify(data));
+            $cordovaSpinnerDialog.hide();
+            if(data.success == true){
+                  $scope.customerTransactionList = data.Customer_Transactions;
+             }else if(data.success == false){
+                window.plugins.toast.showShortCenter(data.msg);
+             }else {
+                  window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+              }
+        });
+        res.error(function(data, status, headers, config) {
+                $cordovaSpinnerDialog.hide();
+                if (!$cordovaNetwork.isOnline()) {
+                    window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                } else {
+                    window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                }
+                console.log("customer transaction list api failure message: " + JSON.stringify({ data: data }));
+            });
+
+});
+
+//transactionHistory Screen
+DuqaanCtrl.controller("transactionHistoryCtrl", function($scope, $rootScope, $location, $http, $cordovaNetwork, $cordovaDialogs, $cordovaSpinnerDialog){
+
+        $scope.userName = localStorage.getItem("user_full_name");
+        localStorage.setItem("page_id", "15");
+
+        /*================All transaction info by employee=============*/
+             var dataObject = {
+                               id : localStorage.getItem("user_id")
+                           };
+             $cordovaSpinnerDialog.show("Please Wait..","", true);
+             var res = $http.post(baseURL + 'transactionlist', dataObject);
+               console.log("transaction api parameter: " + JSON.stringify(dataObject));
+             res.success(function(data, status, headers, config) {
+             console.log("transaction parameter Success: " + JSON.stringify(data));
+                 $cordovaSpinnerDialog.hide();
+                 if(data.success == true){
+                        $scope.transactionist = data.transactionist;
+                  }else if(data.success == false){
+                     window.plugins.toast.showShortCenter(data.msg);
+                  }else {
+                       window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+                   }
+             });
+             res.error(function(data, status, headers, config) {
+                     $cordovaSpinnerDialog.hide();
+                     if (!$cordovaNetwork.isOnline()) {
+                         window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                     } else {
+                         window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                     }
+                     console.log("transaction list api failure message: " + JSON.stringify({ data: data }));
+                 });
+
+      $scope.transactionClicked = function(value){
+        $location.path('transactionHistoryDetails/'+value._id);
+      }
+
+});
+
+//TransactionHistoryDetails Screen
+DuqaanCtrl.controller("TransactionHistoryDetailsCtrl", function($scope, $rootScope, $routeParams, $location, $http, $cordovaNetwork, $cordovaDialogs, $cordovaSpinnerDialog){
+
+        $scope.userName = localStorage.getItem("user_full_name");
+        localStorage.setItem("page_id", "16");
+
+        /*================Each transaction info by employee=============*/
+             var dataObject = {
+                               id : localStorage.getItem("user_id"),
+                               txn_id: $routeParams.id
+
+                           };
+             $cordovaSpinnerDialog.show("Please Wait..","", true);
+             var res = $http.post(baseURL + 'transactionlist', dataObject);
+               console.log("single transaction api parameter: " + JSON.stringify(dataObject));
+             res.success(function(data, status, headers, config) {
+             console.log("single transaction parameter Success: " + JSON.stringify(data));
+                 $cordovaSpinnerDialog.hide();
+                 if(data.success == true){
+                        $scope.transactionDetails = data.Transaction_Details[0];
+                  }else if(data.success == false){
+                     window.plugins.toast.showShortCenter(data.msg);
+                  }else {
+                       window.plugins.toast.showShortCenter('There is some problem. Please try again later.');
+                   }
+             });
+             res.error(function(data, status, headers, config) {
+                     $cordovaSpinnerDialog.hide();
+                     if (!$cordovaNetwork.isOnline()) {
+                         window.plugins.toast.showShortCenter('There is no network connectivity. Please check your network connection.');
+                     } else {
+                         window.plugins.toast.showShortCenter('There is some problem. Please try again later.')
+                     }
+                     console.log("single transaction list api failure message: " + JSON.stringify({ data: data }));
+                 });
+
+});
